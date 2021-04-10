@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'montserrat';
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.first{
+    background-image: url('Barclays-logo.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 200px;
+    background-position: center;
+}
+
+.second{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: #00AEEE;
+
+}
+
+.logoheader {
+    background-image: url('./ESTHER\ POSTER.png');
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+
+}
+
+.form2div{
+    display: grid;
+}
+
+.form1div , .form2div{
+    width: 60%;
+    margin: auto;
+    align-self: center;
+    height: 270px;
+    padding: 20px;
+    /* align-items: center; */
+    border: 1px solid rgb(14, 223, 255);
+    display: grid;
+    border-radius: 5px;
+    grid-template-rows: 100px 1fr;
+}
+
+.form2div{
+    height: 70vh;
+    display: none;
+}
+
+.form1, .form2{
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-row-gap: 10px;
+    grid-auto-rows: 50px;
+    align-self: center;
+}
+
+.form1 input{
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.inpt{
+    padding: 0 10px;
+}
+
+.btn{
+    background-color: #006388;
+    color: white;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 150px 150px;
+    grid-template-rows: 70px;
+    /* background-color: black; */
+    color: #2BBCF1;
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid red; */
+    padding: 0 100px;
+    visibility: hidden;
+}   
+
+header a{
+    align-self: center;
+    justify-self: end;
+    color: #2BBCF1;
+    text-decoration: none;
+}
+
+.logo{
+    background-image: url('../../Downloads/Barclays-logo.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: start;
+    background-size: 100px;
+}
+
+.hero{
+    background-image: url('../../Downloads/pexels-matheus-bertelli-573238.jpg');
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    background-position:bottom;
+    padding: 0 0 0 100px;
+    display: grid;
+    align-items: center;
+}
+
+.hero h1{
+    color: white;
+    font-size: 98px;
+}

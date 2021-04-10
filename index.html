@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="first"></div>
+        <div class="second">
+            <div class="form1div">
+            <div class="logoheader"></div>
+            <form class="form1" action="">
+                <input class="inpt email" type="text" placeholder="Email" name="" id="">
+                <input class="inpt password" type="text" placeholder="Password" name="" id="">
+                <input class="btn" type="button" value="Sign In" name="" id="signIn">
+                <a style="justify-self: center; text-decoration: none; color: aliceblue;" href="">Sign Up</a>
+            </form>
+            </div>
+
+            <div class="form2div">
+            <form class="form2" action="">
+                <div class="logoheader"></div>
+
+                <div class="backBtn"></div>
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="text" name="" id="">
+                <input type="button" value="Sign In" name="" id="">
+                
+            </form>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="../jqueryclass/jquery.js"></script>
+    <script>
+        let password = document.querySelector('.password')
+            let email = document.querySelector('.email')
+
+        document.querySelector('#signIn').addEventListener('click', (e)=>{
+            
+
+            if(email.value.length > 0 && password.value.length){
+                alert( 'Welcome ' + email.value)
+            }
+
+            else{
+                alert('Fill all forms')
+            }
+
+            
+
+        })
+        
+    </script>
+</body>
+</html>
